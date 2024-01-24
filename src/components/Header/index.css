@@ -1,0 +1,12 @@
+.header-container {
+  background-color: #cbd5e1;
+  height: 15vh;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.webiste-logo{
+    height: 70px;
+}
