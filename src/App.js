@@ -31,6 +31,12 @@ class App extends Component {
     this.getProjectsList()
   }
 
+  onChangeCategory = event => {
+    this.setState({selectedCategoryList: event.target.value}, () =>
+      this.getProjectsList(),
+    )
+  }
+
   getProjectsList = async () => {
     this.setState({apiStatus: apiStatusConstants.inProgress})
     const {selectedCategoryList} = this.state
